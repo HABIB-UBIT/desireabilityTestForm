@@ -94,9 +94,9 @@ def handle_form_submission():
                 frustration_no_buddies, frustration_social_rut,
                 frustration_starting_convos, frustration_similar_interests,
                 frustration_short_notice, frustration_isolated_new_place,
-                weekend_options, meeting_feeling, vibe_selections,
-                last_new_thing, meeting_blocker, safe_fun_option,
-                platform_likelihood, challenges, features, safety, scenarios,
+                weekend_options, feel_meeting_new_people, vibe_selections,
+                tried_new_people_last_time, meeting_blocker_to_meet_new_people, safe_fun_way_to,
+                platform_join_likey_to, challenges_you_face_when_trying_to_meet_new_people , likely_features_in_app, safety_features_in_app, scenarios_to_use_app_for,
                 submission_date
             ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """, (

@@ -81,7 +81,7 @@
                 <h1 class="main-title">About You</h1>
                 <div class="select">
                     <select id="age" required aria-required="true">
-                        <option value="" hidden selected disabled>Select Age</option>
+                        <option value="" hidden selected disabled>Age</option>
                         <option value="under_18">Under 18</option>
                         <option value="18-24">18-24</option>
                         <option value="25-34">25-34</option>
@@ -89,14 +89,14 @@
                         <option value="45+">45+</option>
                     </select>
                     <select id="gender" required aria-required="true">
-                        <option value="" hidden selected disabled>Select Gender</option>
+                        <option value="" hidden selected disabled>Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                         <option value="prefer-not">Prefer not to say</option>
                     </select>
                     <select id="city" required aria-required="true">
-                        <option value="" hidden selected disabled>Select City</option>
+                        <option value="" hidden selected disabled>City</option>
                         <option value="karachi">Karachi</option>
                         <option value="hydrabad">Hydrabad</option>
                         <option value="islamabad">Islamabad</option>
@@ -173,7 +173,7 @@
                     <label class="radio-option" role="checkbox" aria-checked="false">
                         <input type="checkbox" name="weekend" value="explore" class="hidden-radio"
                             data-label="Exploring new spots with a group" onchange="updateCheckboxState(this)" />
-                        <span class="radio-label"><b>🎉</b> Exploring new spots with a same group</span>
+                        <span class="radio-label"><b>🎉</b> Exploring new spots with the same friend group</span>
                     </label>
                     <label class="radio-option" role="checkbox" aria-checked="false">
                         <input type="checkbox" name="weekend" value="outdoors" class="hidden-radio"
@@ -204,7 +204,7 @@
         <div id="page6" class="form-page ">
             <div class="page-content">
                 <h1 class="main-title">
-                    How do you feel about meeting new people on a social app for spontaneous meetups?
+                    How do you feel about meeting new people from a social app for quick meetups?
                 </h1>
                 <p class="multi-select-info">
                     Select up to 3 options
@@ -320,7 +320,7 @@
         <!-- Page 8: Great Energy -->
         <div id="page8" class="form-page ">
             <div class="page-content">
-                <h1>Great Energy</h1>
+                <h1>Great Energy! Let’s keep it up.</h1>
                 <img src="{{ url_for('static', filename='images/undraw_well-done_kqud.svg') }}"
                     alt="Friends enjoying coffee" class="illustration" />
             </div>
@@ -338,7 +338,7 @@
         <div id="page9" class="form-page ">
             <div class="page-content">
                 <h1 class="main-title">
-                    When was the last time you tried a new activity with someone? <h3>e.g., a new activity or place</h3>
+                    When was the last time you tried a new activity with someone? <h3>e.g., trying bowling with a friend, eating out at a new restaurant with someone</h3>
                 </h1>
                 <p class="multi-select-info">Select one option</p>
                 <div class="radio-group">
@@ -356,6 +356,11 @@
                         <input type="radio" name="new_things" value="cant_remember" class="hidden-radio"
                             data-label="Can't remember..." onchange="updateRadioState(this)" />
                         <span class="radio-label"><b>📅</b> Can't remember...</span>
+                    </label>
+                    <label class="radio-option" role="radio" aria-checked="false">
+                        <input type="radio" name="new_things" value="it’s_been_a_while" class="hidden-radio"
+                            data-label="It’s been a while…" onchange="updateRadioState(this)" />
+                        <span class="radio-label"><b>📅</b> It’s been a while…</span>
                     </label>
                 </div>
                 <div class="error-message" id="new_things-error">
@@ -464,7 +469,7 @@
         <!-- Page 11: Meeting Blockers -->
         <div id="page11" class="form-page ">
             <div class="page-content">
-                <h1 class="main-title">What stoppes you from meeting new people?</h1>
+                <h1 class="main-title">What stops you from meeting new people?</h1>
                 <p class="multi-select-info">
                     Select up to 4 options
                     <span class="selected-count" data-group="blockers">0</span>
@@ -518,7 +523,7 @@
         <!-- Page 12: Halfway -->
         <div id="page12" class="form-page ">
             <div class="page-content">
-                <h1>Halfway through killing it!</h1>
+                <h1>Halfway through! You’re killing it!</h1>
                 <img src="{{ url_for('static', filename='images/undraw_waiting-for-you_xhp2.svg') }}"
                     alt="Friends enjoying coffee" class="illustration" />
             </div>
@@ -584,7 +589,7 @@
         <div id="page14" class="form-page ">
             <div class="page-content">
                 <h1 class="main-title">
-                    How likely are you to join a platform that helps you:
+                    Would you be interested in joining a platform where you can:
                 </h1>
                 <p class="multi-select-info">
                     Select up to 3 options
@@ -611,7 +616,7 @@
                         <input type="checkbox" name="platform" value="friendships" class="hidden-radio"
                             data-label="Build real friendships (not just followers)"
                             onchange="updateCheckboxState(this)" />
-                        <span class="radio-label"><b>🕗</b> Plan spontaneous meetups with others</span>
+                        <span class="radio-label"><b>🕗</b> Plan quick meetups with others</span>
                     </label>
                     <label class="radio-option" role="checkbox" aria-checked="false">
                         <input type="checkbox" name="platform" value="friendships" class="hidden-radio"
@@ -661,7 +666,7 @@
                         <input type="checkbox" name="challenges" value="social_rut" class="hidden-radio"
                             data-label="I’m stuck in a social rut and want to meet new people."
                             onchange="updateCheckboxState(this)" />
-                        <span class="radio-label">🔄 I’m stuck in a social rut and want to meet new people.</span>
+                        <span class="radio-label">🔄 I’m stuck with same group and feeling bored and want to meet new people.</span>
                     </label>
                     <label class="radio-option" role="checkbox" aria-checked="false">
                         <input type="checkbox" name="challenges" value="shy" class="hidden-radio"
